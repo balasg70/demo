@@ -33,13 +33,13 @@ ansible kp_devops -i hosts -m ping
 Apache:
 
 ```
-ansible-playbook -i hosts apache.yml
+ansible-playbook -i hosts apache.yml -e ansible_python_interpreter=auto_silent
 ```
 
 Mysql:
 
 ```
-ansible-playbook -i hosts mysql.yml
+ansible-playbook -i hosts mysql.yml -e ansible_python_interpreter=auto_silent
 ```
 
 Tomcat:
@@ -51,11 +51,11 @@ ansible-playbook -i hosts tomcat.yml
 Common (curl,telnet,Oracle JDK and Nslookup):
 
 ```
-ansible-playbook -i hosts common.yml
+ansible-playbook -i hosts common.yml -e ansible_python_interpreter=auto_silent
 ```
 
 # Single Step Configuration
 
 ```
-ansible-playbook -i hosts site.yml
+ansible-playbook -i hosts site.yml -e ansible_python_interpreter=auto_silent
 ```
