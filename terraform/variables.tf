@@ -11,12 +11,12 @@ variable "AmiLinux" {
 }
 
 variable "aws_access_key" {
-  default = "AKIAJUU5FDJ4B6ZWTCFA"
+  default = "AKIAIWYZWMMPTC6JX3QQ"
   description = "the user aws access key"
 }
 
 variable "aws_secret_key" {
-  default = "FQB/v33sMjsKwMsU+Wwv2Fng6zzayJZeNif+XaXX"
+  default = "Pa/v0JcEAxG/u+h93VNl3hqK77ivHOpp3mmEitWi"
   description = "the user aws secret key"
 }
 variable "vpc-fullcidr" {
@@ -33,13 +33,14 @@ variable "Subnet-Private-AzA-CIDR" {
 }
 variable "key_name" {
   default = "Testkey"
+  #default = "test1key"
   description = "the ssh key to use in the EC2 machines"
 }
 variable "DnsZoneName" {
   default = "ShaanAWSDNS.internal"
   description = "the internal dns name"
 }
-variable "kp_devops" {
-  type        = string
-  description = "EC2 Key pair name for the EC2"
-}
+#variable "kp_devops" {
+#  type        = string
+#  description = "EC2 Key pair name for the EC2"
+#}
