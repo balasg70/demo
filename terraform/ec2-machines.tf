@@ -5,7 +5,7 @@ resource "aws_instance" "phpapp" {
   subnet_id = aws_subnet.PublicAZA.id
   vpc_security_group_ids = [aws_security_group.WebApp.id]
   key_name = aws_key_pair.generated_key.key_name
-  #key_name = var.key_name
+  key_name = var.key_name
   #key_name = "Testkey"
   tags = {
         Name = "ec2_devops"
